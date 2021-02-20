@@ -1,0 +1,22 @@
+@import "../../sass/main";
+
+
+.btn{
+	outline:0;
+	border:0;
+	border:1px solid $orange;
+	padding:1.5rem 2rem;
+	width:max-content;
+	font-size:1.6rem;
+	background-color: $orange;
+	font-family: inherit;
+	font-weight: bold;
+	color:#fff;
+	cursor: pointer;
+	display: block;
+	border-radius: 10px;
+	&:hover{
+		background: rgba($orange,0.8);
+	}
+	margin-top:1.5rem;
+}

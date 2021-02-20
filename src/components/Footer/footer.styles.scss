@@ -1,0 +1,22 @@
+@import "../../sass/main";
+
+.footer{
+	padding:2rem 0rem;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top:1px solid $black;
+
+	&__text{
+		font-size:1.5rem;
+		color:$black;
+	}
+
+	&__link{
+		color:$red;
+		font-weight: bold;
+		&:hover{
+			color:$orange;
+		}
+	}
+}

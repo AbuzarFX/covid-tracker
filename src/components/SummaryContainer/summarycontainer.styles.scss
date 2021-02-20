@@ -1,0 +1,35 @@
+@import "../../sass/main";
+
+.summary{
+
+	h2{
+		display:flex;
+		align-items: center;
+		img{
+			margin-right:10px;
+		}
+		span{
+			margin-left:10px;
+		}
+	}
+	h3{
+		margin:1.5rem 0;
+		font-family: "Montserrat",sans-serif;
+		font-weight:lighter;
+		
+	}
+
+	&__infobox{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		margin:2.5rem 0rem;
+		width:100%;
+		@media only screen and(max-width:600px){
+			flex-direction: column;
+		}
+	}
+
+
+}
+

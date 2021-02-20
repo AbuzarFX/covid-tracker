@@ -1,0 +1,33 @@
+@import "../../sass/main";
+
+.infobox{
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+	padding:2.8rem 2rem;
+	flex:1;
+
+	@media only screen and(max-width:600px){
+		width:90%;
+		margin:1rem auto;
+	}
+	&:not(:last-child){
+		margin-right:1.5rem;
+	
+	}
+	@media screen  and (max-width:600px){
+		&:last-child{
+			margin-right: 1.5rem;;
+		}
+	}
+	&--cases{
+		border-top:5px solid $warning;
+	}
+
+	&--deaths{
+		border-top:5px solid $red
+	}
+
+	&--recovered{
+		border-top:5px solid $green
+	}
+}

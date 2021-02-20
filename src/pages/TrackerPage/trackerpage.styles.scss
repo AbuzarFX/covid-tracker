@@ -1,0 +1,45 @@
+@import "../../sass/main";
+
+.trackerpage{
+	background:$background-gray;
+	h1{
+		color:$red;
+		font-size:3rem;
+		margin:2rem 0rem;
+	}
+}
+
+.trackerpage-section{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	@media only screen and(max-width:1340px){
+		flex-direction: column;
+	}
+
+
+	&__left{
+		flex: 0 0 65%;
+		padding:2rem;
+		@media only screen and(max-width:1340px){
+			width:90%;
+			margin:0 auto;
+		}
+		@media only screen and(max-width:680px){
+			width:100%;
+		}
+	
+	}
+
+	&__right{
+		flex: 0 0 30%;
+		height: 100%;
+		@media only screen and(max-width:1340px){
+			width:90%;
+			margin:0 auto;
+		}
+		@media only screen and(max-width:680px){
+			width:100%;
+		}
+	}
+}
